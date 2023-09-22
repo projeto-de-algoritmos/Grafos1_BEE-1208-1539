@@ -1,19 +1,20 @@
 def is_dag(adj: dict):
     keys = list(adj.keys())
-    incoming = [0 for x in adj.keys()]
+    count = [0 for x in keys]
     for key in keys:
         for value in adj[key]:
-            incoming[value - 1] += 1
-    # print(incoming, adj)
+            count[value - 1] += 1
 
     i = 0
     while i < len(keys):
-        if not 0 in incoming: return False
-        v = incoming.index(0)
-        for i in range(len(incoming)):
-            if (i + 1) in adj[v + 1]: incoming[i] -= 1
-        incoming.pop(v)
-        keys.pop(v)
+        v = -1
+        for j in range(len(count)):
+            if count[j] == 0:
+                v = j
+                break
+        if v == -1: return False
+        count[v] = -1
+        for neigh in adj[v + 1]: count[neigh - 1] -= 1
         i += 1
     return True
 
