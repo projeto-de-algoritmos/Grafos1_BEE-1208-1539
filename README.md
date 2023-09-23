@@ -15,8 +15,8 @@ Este trabalho compreende a resolução de alguns exercícios do juiz online Beec
 | Autor | Enunciado | Resolução |
 | -- | -- | -- |
 | Bruno Martins | [Bee #1081](https://www.beecrowd.com.br/judge/pt/problems/view/1081) | [Checar Resolução](bee1081.py)
-| Bruno Martins | [Bee #1082](https://www.beecrowd.com.br/judge/pt/problems/view/1082) | [Checar Resolução](bee1081.py)
-| Bruno Martins | [Bee #1610](https://www.beecrowd.com.br/judge/pt/problems/view/1610) | [Checar Resolução](bee1081.py)
+| Bruno Martins | [Bee #1082](https://www.beecrowd.com.br/judge/pt/problems/view/1082) | [Checar Resolução](bee1082.py)
+| Bruno Martins | [Bee #1610](https://www.beecrowd.com.br/judge/pt/problems/view/1610) | [Checar Resolução](bee1610.py)
 
 ## Screenshots
 ![submissions](sub.png)
