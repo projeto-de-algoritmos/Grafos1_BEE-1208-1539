@@ -1,10 +1,11 @@
 visited = []
 numbers = []
 
-def g_reverse(graph):
+def g_reverse(graph): # O(n + m)
     rev = {node: [] for node in graph}
     for node in graph.keys():
-        for item in graph[node]: rev[item].append(node)
+        for item in graph[node]:
+            rev[item].append(node)
     return rev
 
 def dfs_visit(graph, node, ages):
@@ -33,16 +34,17 @@ def swap(graph, aim1, aim2):
             graph[node].remove(aim2)
             graph[node].append(aim1)
     return graph
-    
-N, M, I = map(int, input().strip().split())
-ages = [int(x) for x in input().strip().split()]
-graph = {node: [] for node in range(1, N + 1)}
-for _ in range(M):
-    X, Y = map(int, input().strip().split())
-    graph[X].append(Y)
 
-# print(graph, ages)
-for _ in range(I):
-    cmd = input().strip().split()
-    if len(cmd) == 2: print(fewest(graph, int(cmd[1]), ages))
-    else: graph = swap(graph,int(cmd[1]), int(cmd[2]))
+while True:
+    try:
+        N, M, I = map(int, input().strip().split())
+        ages = [int(x) for x in input().strip().split()]
+        graph = {node: [] for node in range(1, N + 1)}
+        for _ in range(M):
+            X, Y = map(int, input().strip().split())
+            graph[X].append(Y)
+        for _ in range(I):
+            cmd = input().strip().split()
+            if len(cmd) == 2: print(fewest(graph, int(cmd[1]), ages))
+            else: graph = swap(graph,int(cmd[1]), int(cmd[2]))
+    except EOFError: break
