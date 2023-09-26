@@ -18,6 +18,8 @@ Este trabalho compreende a resolução de alguns exercícios do juiz online Beec
 | Bruno Martins | [Bee #1082](https://www.beecrowd.com.br/judge/pt/problems/view/1082) | [Checar Resolução](bee1082.py)
 | Bruno Martins | [Bee #1610](https://www.beecrowd.com.br/judge/pt/problems/view/1610) | [Checar Resolução](bee1610.py)
 
+[Vídeo 1 - Bruno Martins](https://youtu.be/eWkJxv7i6-s)
+
 ## Screenshots
 ![submissions](sub.png)
 
